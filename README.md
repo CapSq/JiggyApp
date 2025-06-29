@@ -1,1 +1,1 @@
-App executable can be found in 
+App executable can be found in 'dist' folder
