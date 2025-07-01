@@ -9,7 +9,7 @@ import time
 import random
 
 Jiggy = QApplication(sys.argv)
-
+#pyinstaller --onefile --windowed --icon=icon.ico --hidden-import=pynput --add-data "icon.ico:." MooseApp.py
 
 def printlog():
     frame = inspect.currentframe()
