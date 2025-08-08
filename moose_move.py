@@ -16,8 +16,8 @@ def jiggy():
     offset_y = random.randint(-OFFSET_RND, OFFSET_RND)
 
     # move in small steps to offset position
-    MIN_STEPS = 2
-    MAX_STEPS = 5
+    MIN_STEPS = 3
+    MAX_STEPS = 10
     
     MAX_SLEEP_TIME = 0.05
 

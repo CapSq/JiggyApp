@@ -128,11 +128,16 @@ class JiggyThreader(QThread):
         MINUTE = 60
         while self.running:
             interval = int(self.interval_slider.value())
+            # interval = 0.1
+            print(f"interval:{interval}")
             move_mouse.jiggy()
+            
             
             total_wait = random.uniform(MINUTE * interval/2, MINUTE * interval)
             waited = 0
             wait_interval = 0.1 #100ms at a time
+
+            print(f"Calling jiggy(), next in {total_wait:.2f} seconds")
 
             while self.running and waited < total_wait:
                 time.sleep(wait_interval)
